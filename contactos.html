@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos1.css">
+    <title>Contactos</title>
+</head>
+
+<body>
+
+  <!---inicio encabezado---->
+  <header>
+    <div class="conteiner">
+        <p class="logo">aca va el logo</p>
+        <nav>
+            <div><a href="index.html">Inicio</a></div>
+            <div><a href="nosotras.html">Nosotras</a></div>
+            <div><a href="productos.html">Productos</a></div>
+            <div><a href="elaboracion.html">Elaboración</a></div>
+            <div><a href="contactos.html">Contactos</a></div>
+        </nav>
+    </div>
+  </header>       
+<!------fin encabezado--------->
+
+<!--Formulario-->  
+    <h2>Formulario</h2>
+    
+    <form action="enviar.php" method="post"> 
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+            <br>
+            <label for="">nombre</label>
+            <input type="text" placeholder="escribi tu nombre"><br>
+            <br>
+            <label for="">apellido</label>
+            <input type="text" placeholder="escribi tu apellido"><br>
+            <br>
+            <label for="correo">correo</label>
+            <input type="mail" name="correo" placeholder="escribi tu mail"><br>
+            <br>
+            <label for="">telefono</label>
+            <input type="number" placeholder="escribi tu telefono"><br>
+            <br>
+            <label for="">seleciona de que pasi sos</label>
+            <select name="pais">
+                <option>Argentina</option>
+                <option>Uruguay</option>
+                <option>Brasil</option>
+                <option>Otro pais</option>
+            </select><br>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
+            <br>
+            <button type="submit">enviar fromulario</button>
+            <button type="reset">limpiar fromulario</button><br>
+            <br>
+            <input type="checkbox">
+            <label for="">deseo recibir informacion en mi mail</label><br>
+            <input type="checkbox">
+            <label for="">deseo recibir informacionen mi celular</label>
+            <br>
+
+        </fieldset>
+
+    </form>  
+<!-- fin formulario-->
+
+<!--inicio footer-->
+<footer>
+    <div class="logow"><i class="fa-brands fa-whatsapp"></i></div>
+    
+    <div class="pie"> 
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, totam ea? Exercitationem quam provident vero animi dolor facere dolores, tempora ipsum praesentium, asperiores similique! Corrupti esse aliquam delectus enim voluptatum?</p>
+    </div>
+</footer>
+ <!--fin footer-->  
+
+</body>
+</html>

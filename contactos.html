@@ -4,80 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilos1.css">
+    <link rel="stylesheet" href="estilos.css">
     <title>Contactos</title>
 </head>
 
 <body>
 
-  <!---inicio encabezado---->
-  <header>
-    <div class="conteiner">
-        <p class="logo">aca va el logo</p>
-        <nav>
-            <div><a href="index.html">Inicio</a></div>
-            <div><a href="nosotras.html">Nosotras</a></div>
-            <div><a href="productos.html">Productos</a></div>
-            <div><a href="elaboracion.html">Elaboración</a></div>
-            <div><a href="contactos.html">Contactos</a></div>
-        </nav>
-    </div>
+<!---inicio encabezado---->
+<header>
+    <nav>
+      <p class="logof"><img src="Img/logoF.png" class="rounded-circle" alt=""></p>
+      <div><a href="index.html">Inicio</a></div>
+      <div><a href="nosotras.html">Nosotras</a></div>
+      <div><a href="productos.html">Productos</a></div>
+      <div><a href="elaboracion.html">Elaboración</a></div>
+      <div><a href="contactos.html">Contactos</a></div>
+    </nav>
   </header>       
 <!------fin encabezado--------->
 
 <!--Formulario-->  
     <h2>Formulario</h2>
+    <div class="formulario">
+        <form action="enviar.php" method="post"> 
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <br>
+                <label for="">nombre</label>
+                <input type="text" placeholder="escribi tu nombre"><br>
+                <br>
+                <label for="">apellido</label>
+                <input type="text" placeholder="escribi tu apellido"><br>
+                <br>
+                <label for="correo">correo</label>
+                <input type="mail" name="correo" placeholder="escribi tu mail"><br>
+                <br>
+                <label for="">telefono</label>
+                <input type="number" placeholder="escribi tu telefono"><br>
+                <br>
+                <label for="">seleciona de que pasi sos</label>
+                <select name="pais">
+                    <option>Argentina</option>
+                    <option>Uruguay</option>
+                    <option>Brasil</option>
+                    <option>Otro pais</option>
+                </select><br>
+                <br>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
+                <br>
+                <button type="submit">enviar fromulario</button>
+                <button type="reset">limpiar fromulario</button><br>
+                <br>
+                <input type="checkbox">
+                <label for="">deseo recibir informacion en mi mail</label><br>
+                <input type="checkbox">
+                <label for="">deseo recibir informacionen mi celular</label>
+                <br>
     
-    <form action="enviar.php" method="post"> 
-        <fieldset>
-            <legend>Formulario de contacto</legend>
-            <br>
-            <label for="">nombre</label>
-            <input type="text" placeholder="escribi tu nombre"><br>
-            <br>
-            <label for="">apellido</label>
-            <input type="text" placeholder="escribi tu apellido"><br>
-            <br>
-            <label for="correo">correo</label>
-            <input type="mail" name="correo" placeholder="escribi tu mail"><br>
-            <br>
-            <label for="">telefono</label>
-            <input type="number" placeholder="escribi tu telefono"><br>
-            <br>
-            <label for="">seleciona de que pasi sos</label>
-            <select name="pais">
-                <option>Argentina</option>
-                <option>Uruguay</option>
-                <option>Brasil</option>
-                <option>Otro pais</option>
-            </select><br>
-            <br>
-            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
-            <br>
-            <button type="submit">enviar fromulario</button>
-            <button type="reset">limpiar fromulario</button><br>
-            <br>
-            <input type="checkbox">
-            <label for="">deseo recibir informacion en mi mail</label><br>
-            <input type="checkbox">
-            <label for="">deseo recibir informacionen mi celular</label>
-            <br>
+            </fieldset>
+    
+        </form>  
+    </div>
 
-        </fieldset>
-
-    </form>  
 <!-- fin formulario-->
 
 <!--inicio footer-->
 <footer>
-    <div class="logow"><i class="fa-brands fa-whatsapp"></i></div>
+    <div class="conteinerpie">
+    <h2 class="redes">SEGUINOS EN</h2>
+    <div class="redes logoinstagram"><i class="fa-brands fa-instagram"></i></div>
     
-    <div class="pie"> 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, totam ea? Exercitationem quam provident vero animi dolor facere dolores, tempora ipsum praesentium, asperiores similique! Corrupti esse aliquam delectus enim voluptatum?</p>
+    <div class="redes logoface"><i class="fa-brands fa-facebook-square"></i></div>
+    <p>&copy; Fuego Nativo 2022</p>
     </div>
+    <div class="logow"></div>
+
 </footer>
- <!--fin footer-->  
+<!--fin footer-->  
+
+<!--inicio scipts-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!--fin scipts-->
 
 </body>
 </html>

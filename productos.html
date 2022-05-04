@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos.css">
     <title>Productos</title>
@@ -11,52 +12,99 @@
 
 <body>
 
-  <!---inicio encabezado---->
-  <header>
-    <div class="conteiner">
-        <p class="logo">aca va el logo</p>
-        <nav>
-            <div><a href="index.html">Inicio</a></div>
-            <div><a href="nosotras.html">Nosotras</a></div>
-            <div><a href="productos.html">Productos</a></div>
-            <div><a href="elaboracion.html">Elaboración</a></div>
-            <div><a href="contactos.html">Contactos</a></div>
-        </nav>
-    </div>
-  </header>          
-<!------fin encabezado--------->
+<!---inicio nav---->
+<header>
+    <nav>
+    <p class="logof"><img src="Img/logoF.png" class="rounded-circle" alt=""></p>
+    <div><a href="index.html">Inicio</a></div>
+    <div><a href="nosotras.html">Nosotras</a></div>
+    <div><a href="productos.html">Productos</a></div>
+    <div><a href="elaboracion.html">Elaboración</a></div>
+    <div><a href="contactos.html">Contactos</a></div>
+    </nav>
+</header>         
+<!------fin nav--------->
 
-<!-- inicio contenido-->  
-<main>
-   <section id="nuestros porductos">
-       <div class="conteiner">
-            <section class="galeriap">
-                <div class="img img1"></div>
-                <div class="img img2"></div>
-                <div class="img img3"></div>
-                <div class="img img4"></div>
-                <div class="img img5"></div>
-                <div class="img img6"></div>
-                <div class="img img7"></div>
-                <div class="img img8"></div>
-            </section>
-        </div>
-    </section>
-</main>
-<!--fin contenido-->
+    <!--inicio contenido-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="Img/img8.jpg" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        
+    
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="Img/img4.jpg" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="Img/img3.jpg" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="Img/v.vertical.jpg" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="Img/dosvelas.jpg" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="Img/portada.jpg" alt="Card image">
+                <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+    </div>
+    </div>
+    
+    </div>
+    
+        <!--fin contenido-->
 
 <!--inicio footer-->
 <footer>
     <div class="conteinerpie">
-     <h2 class="redes">SEGUINOS EN</h2>
-     <div class="redes logoinstagram"><i class="fa-brands fa-instagram"></i></div>
-     
-     <div class="redes logoface"><i class="fa-brands fa-facebook-square"></i></div>
-      <p>&copy; Fuego Nativo 2022</p>
+    <h2 class="redes">SEGUINOS EN</h2>
+    <div class="redes logoinstagram"><i class="fa-brands fa-instagram"></i></div>
+    
+    <div class="redes logoface"><i class="fa-brands fa-facebook-square"></i></div>
+    <p>&copy; Fuego Nativo 2022</p>
     </div>
- 
- </footer>
+    <div class="logow"></div>
+
+</footer>
 <!--fin footer-->
+
+<!--inicio scipts-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!--fin scipts-->
     
 </body>
 </html>

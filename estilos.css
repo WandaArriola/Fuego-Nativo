@@ -4,6 +4,7 @@
     padding: 0px;
 }
 
+
 /*header*/
 
 body{
@@ -67,39 +68,51 @@ nav div:hover{
 /*fin header*/ 
 
 /*elaboración*/
+.productos{
+    height: auto;
+    width: 1050px;
+    /*background-color: rgba(0, 255, 255, 0.281);*/
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-.transition{
+.fotoe{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    float: right;
+    margin-right: 10px;
+}
 
-    background-color: rgba(255, 228, 196, 0.658);
-    height: 150px;
-    width: 800px;
+.f1{
+    background-image: url(Img/elementos.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.f2{
+    background-image: url(Img/cera.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.f3{
+    background-image: url(Img/frasco.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.textoe{
+    height: 500px;
+    width: 500px;
+    background-color: rgba(165, 42, 42, 0.329);
+    margin-left: 10px;
+    
+    
+}
+.descripcion{
+    background-color: aqua;
+    
     text-align: center;
-    margin:auto;
-    font-size: 20px;
-    padding: 10px;
-    border: 2px solid black;
-}
-
-#t1{
-    transition: height 2.7s;
-}
-
-#t1:hover{
-    height: 200px;
-}
-#t2{
-    transition: height 2.7s;
-}
-
-#t2:hover{
-    height: 200px;
-}
-#t3{
-    transition: height 2.7s;
-}
-
-#t3:hover{
-    height: 200px;
 }
 
 /*fin elaboración*/

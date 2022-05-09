@@ -27,42 +27,46 @@ body{
     
 }
 
-
-nav{
+header{
     display: flex;
     background-color: rgba(228, 217, 188, 0.699);
     height: 100px;
-    width: 1800;
-    justify-content: flex-end;  
-    
+    width: 100%;
+    justify-content: space-between;  
 }
+
+.container-secciones{
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    width: 50%;
+}
+
 
 .logof{
-    display: flex;
     height: 90px;
     width: 90px;
-    top: 200px;
-    left: 100px;
-    
+    top: 200px; 
+    margin-left: 20px; 
 }
 
 
-nav div{
+.section{
     height: 80px;
     width: 150px;
-    list-style: none;
     background-color: rgba(119, 10, 34, 0.322);
     font-size: 24px;
     display: inline-block;
     margin: 10px;
     transition: all 1.7s;
-    text-align: center;
-    
+    text-align: center; 
+    color: black;
 }
 
 
-nav div:hover{
+.section:hover{
     height: 100px;
+    width: 170px;
 }
 
 /*fin header*/ 
@@ -109,13 +113,46 @@ nav div:hover{
     
     
 }
-.descripcion{
+.descripcio{
     background-color: aqua;
     
     text-align: center;
 }
 
 /*fin elaboración*/
+
+/*nosotras*/
+.seccion-nosotras{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    
+    background-color: rgba(165, 42, 42, 0.39);
+    padding: 10px;
+    height: 500px;
+}
+.relato{
+    background-color: rgba(212, 190, 131, 0.603);
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    margin-top: 30px;
+}
+.foto-nosotras{
+   
+    margin-left: 10px;
+    background-image: url(Img/mailen.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+    width: 50%;
+    margin-top: 30px;
+    
+}
 
 /*inicio footer*/
 
@@ -157,6 +194,10 @@ nav div:hover{
 /*fin footer*/
 
 /*inicio prodcutos*/
+.container-productos{
+    display: flex;
+    justify-content: center;
+}
 .card{
     text-align: center;
     background-color: rgba(228, 217, 188, 0.274); 
@@ -165,49 +206,6 @@ nav div:hover{
 
 }
 /*fin prodcutos*/
-
-
-/*inicio nonostras*/
-
-@media only screen and (min-width: 1020px){
-   
-    .seccionp{
-        display: grid;
-        background-color: rgba(165, 42, 42, 0.555);
-        grid-template-columns: 650px 650px;
-    }
-   
-    .texto{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background-color: rgba(221, 161, 138, 0.507);
-        background-position: center  ;
-        background-size: cover;
-        margin: 20px;
-        text-align: center;
-        
-    }
-
-    .texto p{
-        height: 300px;
-        width: 300px;
-        background-color: rgba(137, 43, 226, 0.021);
-        text-align: center;
-        margin: auto;
-    }
-    
-    .foto{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        background-color: darkmagenta;
-        background-position: center ;
-        background-size: cover;
-        margin: 20px;
-        background-image: url(Img/mailen.jpeg)
-    }
-}
-
-/*fin nosotras*/
 
 /*inicio formulario*/
 
@@ -221,6 +219,80 @@ nav div:hover{
 }
 
 /*fin formulario*/
+
+
+
+/*navegador*/
+
+@media only screen and (max-width: 768px)
+{
+   
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+    .section{
+    display: flex;
+    height: 50px;
+    width: 60px;
+    font-size: 10px;
+    color: black;
+    margin: 2px;
+    text-align: center;
+    transition: all 1.7s;
+    }  
+
+    .section:hover{
+        height: 55px;
+        width: 65px;
+    }
+
+    .logof{
+        margin: 10px;
+        top: 0px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .container-secctions{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media only screen  and (min-width: 769px) and (max-width: 984px)
+{
+    .section{
+    height: 75px;
+    width: 120px;
+    margin: 1px;
+    transition: all 0,2s;
+    font-size: 20px;
+    background-color: rgba(165, 42, 42, 0.479);
+
+    }  
+
+    .section:hover{
+        height: 80px;
+        width: 125px;
+    }
+
+    .logof{
+        margin: 10px;
+        justify-content: center;
+    }
+}
+
+/*navegador*/
+
+
 
 
 

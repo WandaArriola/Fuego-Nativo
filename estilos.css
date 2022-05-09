@@ -126,7 +126,6 @@ header{
     display: flex;
     margin: auto;
     justify-content: space-between;
-    
     background-color: rgba(165, 42, 42, 0.39);
     padding: 10px;
     height: 500px;
@@ -138,17 +137,16 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 50%;
+    height: 75%;
     width: 50%;
     margin-top: 30px;
 }
 .foto-nosotras{
-   
     margin-left: 10px;
     background-image: url(Img/mailen.jpeg);
     background-position: center;
     background-size: cover;
-    height: 50%;
+    height: 75%;
     width: 50%;
     margin-top: 30px;
     

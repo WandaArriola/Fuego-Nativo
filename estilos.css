@@ -72,21 +72,34 @@ header{
 /*fin header*/ 
 
 /*elaboración*/
-.productos{
+.conteiner-elaboracion{
     height: auto;
-    width: 1050px;
-    /*background-color: rgba(0, 255, 255, 0.281);*/
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 1030px;
+    margin-left: 15%;
+    background-color: rgba(212, 166, 105, 0.452);
+}
+
+.elaboracion2{
+    display: flex;
+    flex-direction: column;
+}
+    
+.elaboracion-div{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
 }
 
 .fotoe{
     height: 500px;
     width: 500px;
-    background-color: black;
-    float: right;
-    margin-right: 10px;
+}
+
+.textoe{
+    height: 500px;
+    width: 500px;
+    background-color: rgba(165, 42, 42, 0.329);  
 }
 
 .f1{
@@ -105,18 +118,14 @@ header{
     background-position: center;
     background-size: cover;
 }
-.textoe{
-    height: 500px;
-    width: 500px;
-    background-color: rgba(165, 42, 42, 0.329);
-    margin-left: 10px;
-    
-    
-}
-.descripcio{
-    background-color: aqua;
-    
+
+.descripcion{
+    background-color: rgba(161, 58, 58, 0.603);
     text-align: center;
+    padding: 50px;
+    margin-top: 120px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 /*fin elaboración*/
@@ -151,6 +160,8 @@ header{
     margin-top: 30px;
     
 }
+
+/* fin nosotras*/
 
 /*inicio footer*/
 
@@ -224,7 +235,7 @@ header{
 
 @media only screen and (max-width: 768px)
 {
-   
+
     header{
         display: flex;
         flex-direction: row;
@@ -234,7 +245,7 @@ header{
     .section{
     display: flex;
     height: 50px;
-    width: 60px;
+    width: 55px;
     font-size: 10px;
     color: black;
     margin: 2px;
@@ -261,10 +272,63 @@ header{
         justify-content: center;
     }
 
+    .seccion-nosotras{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        
+    }
 
+    .foto-nosotras{
+        height: 50%;
+        width: 95%;
+        margin: auto;
+    }
+    .relato{
+        height: 60%;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;  
+    }
 
+    .relatop{
+        margin: auto;
+    }
+
+    .conteiner-elaboracion{
+        height: auto;
+        width: auto;
+        margin-left: 10px;
+    }
+    
+    .elaboracion-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .fotoe{
+        height: 350px;
+        width: 350px;
+    }
+    
+    .textoe{
+        height: 350px;
+        width: 350px;
+    }
+
+    .descripcion{
+        text-align: center;
+        padding: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .margin-foto{
+        margin-top: 30px;
+    }
 }
-
 @media only screen  and (min-width: 769px) and (max-width: 984px)
 {
     .section{
@@ -285,6 +349,13 @@ header{
     .logof{
         margin: 10px;
         justify-content: center;
+    }
+
+    .conteiner-elaboracion{
+        height: auto;
+        width: auto;
+        margin-left: ;
+      
     }
 }
 

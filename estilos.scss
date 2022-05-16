@@ -132,6 +132,10 @@ header {
     width: 400px;
 
 }
+.titulos{
+    background-color: $colorintermedio;
+    text-align: center;  
+}
 
 /*fin prodcutos*/
 
@@ -251,6 +255,7 @@ form {
     header {
         display: flex;
         flex-direction: row;
+        height: 60px;
     }
 
 
@@ -271,10 +276,9 @@ form {
     }
 
     .logof {
-        margin: 10px;
-        top: 0px;
-        height: 80px;
-        width: 80px;
+        
+        height: 60px;
+        width: 60px;
     }
 
     .container-secctions {
@@ -296,16 +300,16 @@ form {
         width: 95%;
         margin: auto;
     }
+    .titulo-nosotras{
+        height: 30px;
+        font-size: 10px;
+    }
 
     .relato {
-        height: 60%;
+        height: 70%;
         width: 95%;
         margin: auto;
         margin-bottom: 10px;
-    }
-
-    .relatop {
-        margin: auto;
     }
 
     .conteiner-elaboracion {

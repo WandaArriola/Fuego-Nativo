@@ -26,16 +26,24 @@ body {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: rgba(228, 217, 188, 0.699);
   height: 100px;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .container-secciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 50%;
 }
 
@@ -53,6 +61,7 @@ header {
   font-size: 24px;
   display: inline-block;
   margin: 10px;
+  -webkit-transition: all 1.7s;
   transition: all 1.7s;
   text-align: center;
   color: black;
@@ -66,9 +75,13 @@ header {
 /*fin header*/
 /*nosotras*/
 .seccion-nosotras {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: rgba(161, 58, 58, 0.603);
   padding: 10px;
   height: 500px;
@@ -78,9 +91,16 @@ header {
   background-color: rgba(228, 217, 188, 0.699);
   margin-right: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 75%;
   width: 50%;
   margin-top: 30px;
@@ -99,8 +119,12 @@ header {
 /* fin nosotras*/
 /*inicio prodcutos*/
 .container-productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-img-top {
@@ -124,22 +148,43 @@ header {
 /*elaboración*/
 .conteiner-elaboracion {
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .elaboracion2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .elaboracion-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 10px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fotoe {
@@ -192,6 +237,8 @@ form {
 /*fin formulario*/
 /*inicio footer*/
 .conteinerpie {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 90px;
   width: auto;
@@ -220,6 +267,8 @@ form {
 }
 
 .copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   top: 500px;
   left: 1200px;
@@ -228,12 +277,18 @@ form {
 /*fin footer*/
 @media only screen and (max-width: 768px) {
   header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     height: 60px;
   }
-
   .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 50px;
     width: 55px;
@@ -241,73 +296,95 @@ form {
     color: black;
     margin: 2px;
     text-align: center;
+    -webkit-transition: all 1.7s;
     transition: all 1.7s;
   }
-
   .section:hover {
     height: 55px;
     width: 65px;
   }
-
   .logof {
     height: 60px;
     width: 60px;
   }
-
   .container-secctions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: right;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .seccion-nosotras {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     justify-items: center;
   }
-
   .foto-nosotras {
     height: 50%;
     width: 95%;
     margin: auto;
   }
-
   .titulo-nosotras {
     height: 30px;
     font-size: 10px;
   }
-
   .relato {
     height: 70%;
     width: 95%;
     margin: auto;
     margin-bottom: 10px;
   }
-
-  .conteiner-elaboracion {
+  .container-elaboracion {
     height: auto;
     width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   .elaboracion-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-
+  .elaboracion2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .fotoe {
     height: 350px;
     width: 350px;
   }
-
   .textoe {
     height: 350px;
     width: 350px;
   }
-
   .descripcion {
     text-align: center;
     padding: 50px;
@@ -315,57 +392,56 @@ form {
     margin-right: 10px;
     margin-left: 10px;
   }
-
   .margin-foto {
     margin-top: 30px;
   }
-
   .container-productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-
   .card-img-top {
     width: auto;
   }
-
   .card {
     width: 48%;
     margin: 0%;
   }
-
   form {
     width: 80%;
   }
 }
+
 @media only screen and (min-width: 769px) and (max-width: 984px) {
   .section {
     height: 75px;
     width: 120px;
     margin: 1px;
+    -webkit-transition: all 0, 2s;
     transition: all 0, 2s;
     font-size: 20px;
     background-color: rgba(165, 42, 42, 0.479);
   }
-
   .section:hover {
     height: 80px;
     width: 125px;
   }
-
   .logof {
     margin: 10px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .conteiner-elaboracion {
     height: auto;
     width: auto;
   }
-
   form {
     width: 80%;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */

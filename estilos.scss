@@ -145,13 +145,14 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .elaboracion2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+}   
 
 .elaboracion-div {
     display: flex;
@@ -312,17 +313,23 @@ form {
         margin-bottom: 10px;
     }
 
-    .conteiner-elaboracion {
+    .container-elaboracion {
         height: auto;
         width: auto;
         display: flex;
-        justify-items: center;
+        flex-direction: column;
     }
 
     .elaboracion-div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .elaboracion2{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .fotoe {
@@ -397,6 +404,5 @@ form {
     form {
         width: 80%;
     }
-
 
 }

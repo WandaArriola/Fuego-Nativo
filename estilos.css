@@ -177,13 +177,11 @@ header {
 
 /*fin elaboración*/
 /*inicio formulario*/
-.formulario {
-  display: flex;
-  height: 800;
-  width: 600;
-  background-color: rgba(156, 48, 34, 0.527);
-  justify-content: center;
-  border: solid black 2px;
+form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(165, 42, 42, 0.329);
 }
 
 /*fin formulario*/
@@ -330,6 +328,10 @@ header {
     width: 48%;
     margin: 0%;
   }
+
+  form {
+    width: 80%;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 984px) {
   .section {
@@ -354,6 +356,10 @@ header {
   .conteiner-elaboracion {
     height: auto;
     width: auto;
+  }
+
+  form {
+    width: 80%;
   }
 }
 

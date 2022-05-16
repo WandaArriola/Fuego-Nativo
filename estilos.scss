@@ -1,64 +1,64 @@
-
 /*variantes*/
 
-$colorclaro:  rgba(228, 217, 188, 0.699);
+$colorclaro: rgba(228, 217, 188, 0.699);
 
-$colorintermedio:  rgba(165, 42, 42, 0.329);
+$colorintermedio: rgba(165, 42, 42, 0.329);
 
 $coloroscuro: rgba(161, 58, 58, 0.603);
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
 /*header*/
 
-body{
+body {
     background-image: url(Img/fondonude.jpg);
     background-size: cover;
 }
 
 
-.jumbotron{
+.jumbotron {
     height: 800px;
     background-image: url(Img/portada.jpg);
     background-position: center;
     background-size: cover;
 }
-.jumbotron h1{
+
+.jumbotron h1 {
     font-size: 80px;
     font-weight: 150;
     text-align: left;
     padding-top: 1px;
-    
+
 }
 
-header{
+header {
     display: flex;
     background-color: rgba(228, 217, 188, 0.699);
     height: 100px;
     width: 100%;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
-.container-secciones{
+.container-secciones {
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
 
 
-.logof{
+.logof {
     height: 90px;
     width: 90px;
-    top: 200px; 
-    margin-left: 20px; 
+    top: 200px;
+    margin-left: 20px;
 }
 
 
-.section{
+.section {
     height: 80px;
     width: 150px;
     background-color: $coloroscuro;
@@ -66,20 +66,20 @@ header{
     display: inline-block;
     margin: 10px;
     transition: all 1.7s;
-    text-align: center; 
+    text-align: center;
     color: black;
 }
 
 
-.section:hover{
+.section:hover {
     height: 100px;
     width: 170px;
 }
 
-/*fin header*/ 
+/*fin header*/
 
 /*nosotras*/
-.seccion-nosotras{
+.seccion-nosotras {
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -87,7 +87,8 @@ header{
     padding: 10px;
     height: 500px;
 }
-.relato{
+
+.relato {
     background-color: $colorclaro;
     margin-right: 10px;
     text-align: center;
@@ -98,7 +99,8 @@ header{
     width: 50%;
     margin-top: 30px;
 }
-.foto-nosotras{
+
+.foto-nosotras {
     margin-left: 10px;
     background-image: url(Img/mailen.jpeg);
     background-position: center;
@@ -106,81 +108,84 @@ header{
     height: 75%;
     width: 50%;
     margin-top: 30px;
-    
+
 }
 
 /* fin nosotras*/
 
 /*inicio prodcutos*/
-.container-productos{
+.container-productos {
     display: flex;
     justify-content: center;
 }
 
-.card-img-top{
-    width:400px;
-    
+.card-img-top {
+    width: 400px;
+
 }
-.card{
+
+.card {
     text-align: center;
-    background-color: rgba(228, 217, 188, 0.274); 
+    background-color: rgba(228, 217, 188, 0.274);
     margin-top: 10px;
     margin-left: 10px;
     width: 400px;
 
 }
+
 /*fin prodcutos*/
 
 /*elaboración*/
-.conteiner-elaboracion{
+.conteiner-elaboracion {
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.elaboracion2{
+.elaboracion2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-    
-.elaboracion-div{
+
+.elaboracion-div {
     display: flex;
     flex-direction: row;
     padding: 10px;
     justify-content: center;
 }
 
-.fotoe{
+.fotoe {
     height: 500px;
     width: 500px;
 }
 
-.textoe{
+.textoe {
     height: 500px;
     width: 500px;
-    background-color: $coloroscuro;  
+    background-color: $coloroscuro;
 }
 
-.f1{
+.f1 {
     background-image: url(Img/elementos.jpeg);
     background-position: center;
     background-size: cover;
 }
 
-.f2{
+.f2 {
     background-image: url(Img/cera.jpeg);
     background-position: center;
     background-size: cover;
 }
-.f3{
+
+.f3 {
     background-image: url(Img/frasco.jpeg);
     background-position: center;
     background-size: cover;
 }
 
-.descripcion{
+.descripcion {
     background-color: $colorclaro;
     text-align: center;
     padding: 50px;
@@ -192,21 +197,18 @@ header{
 /*fin elaboración*/
 
 /*inicio formulario*/
-
-.formulario{
-    display: flex;
-    height: 800;
-    width: 600;
-    background-color: rgba(156, 48, 34, 0.527);
-    justify-content: center;
-    border: solid black 2px;
+form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $colorintermedio;
 }
 
 /*fin formulario*/
 
 /*inicio footer*/
 
-.conteinerpie{
+.conteinerpie {
     display: flex;
     height: 90px;
     width: auto;
@@ -215,7 +217,7 @@ header{
     display: block;
 }
 
-.redes{
+.redes {
     font-size: 30px;
     height: 40px;
     width: 40px;
@@ -223,7 +225,7 @@ header{
     padding: 10px;
 }
 
-.logow{
+.logow {
     color: green;
     height: 100px;
     width: 100px;
@@ -234,7 +236,7 @@ header{
     font-size: 80px;
 }
 
-.copy{
+.copy {
     display: flex;
     top: 500px;
     left: 1200px;
@@ -244,92 +246,92 @@ header{
 /*fin footer*/
 
 
-@media only screen and (max-width: 768px)
-{
+@media only screen and (max-width: 768px) {
 
-    header{
+    header {
         display: flex;
         flex-direction: row;
     }
 
-    
-    .section{
-    display: flex;
-    height: 50px;
-    width: 55px;
-    font-size: 10px;
-    color: black;
-    margin: 2px;
-    text-align: center;
-    transition: all 1.7s;
-    }  
 
-    .section:hover{
+    .section {
+        display: flex;
+        height: 50px;
+        width: 55px;
+        font-size: 10px;
+        color: black;
+        margin: 2px;
+        text-align: center;
+        transition: all 1.7s;
+    }
+
+    .section:hover {
         height: 55px;
         width: 65px;
     }
 
-    .logof{
+    .logof {
         margin: 10px;
         top: 0px;
         height: 80px;
         width: 80px;
     }
 
-    .container-secctions{
+    .container-secctions {
         display: flex;
         flex-direction: row;
         justify-content: right;
         justify-content: center;
     }
 
-    .seccion-nosotras{
+    .seccion-nosotras {
         display: flex;
         flex-direction: column;
         justify-items: center;
-        
+
     }
 
-    .foto-nosotras{
+    .foto-nosotras {
         height: 50%;
         width: 95%;
         margin: auto;
     }
-    .relato{
+
+    .relato {
         height: 60%;
         width: 95%;
         margin: auto;
-        margin-bottom: 10px;  
+        margin-bottom: 10px;
     }
 
-    .relatop{
+    .relatop {
         margin: auto;
     }
 
-    .conteiner-elaboracion{
+    .conteiner-elaboracion {
         height: auto;
         width: auto;
         display: flex;
         justify-items: center;
     }
-    
-    .elaboracion-div{
+
+    .elaboracion-div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .fotoe{
-        height: 350px;
-        width: 350px;
-    }
-    
-    .textoe{
+    .fotoe {
         height: 350px;
         width: 350px;
     }
 
-    .descripcion{
+    .textoe {
+        height: 350px;
+        width: 350px;
+    }
+
+    .descripcion {
         text-align: center;
         padding: 50px;
         margin-top: 10px;
@@ -337,52 +339,60 @@ header{
         margin-left: 10px;
     }
 
-    .margin-foto{
+    .margin-foto {
         margin-top: 30px;
     }
 
-    .container-productos{
+    .container-productos {
         display: flex;
         flex-direction: row;
 
     }
-    .card-img-top{
+
+    .card-img-top {
         width: auto;
     }
-    .card{
+
+    .card {
         width: 48%;
         margin: 0%;
-        }
+    }
 
+    form {
+        width: 80%;
+    }
 }
-@media only screen  and (min-width: 769px) and (max-width: 984px)
-{
-    .section{
-    height: 75px;
-    width: 120px;
-    margin: 1px;
-    transition: all 0,2s;
-    font-size: 20px;
-    background-color: rgba(165, 42, 42, 0.479);
 
-    }  
+@media only screen and (min-width: 769px) and (max-width: 984px) {
+    .section {
+        height: 75px;
+        width: 120px;
+        margin: 1px;
+        transition: all 0, 2s;
+        font-size: 20px;
+        background-color: rgba(165, 42, 42, 0.479);
 
-    .section:hover{
+    }
+
+    .section:hover {
         height: 80px;
         width: 125px;
     }
 
-    .logof{
+    .logof {
         margin: 10px;
         justify-content: center;
     }
 
-    .conteiner-elaboracion{
+    .conteiner-elaboracion {
         height: auto;
         width: auto;
-        
-    }
-    
-    
-}
 
+    }
+
+    form {
+        width: 80%;
+    }
+
+
+}

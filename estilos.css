@@ -74,21 +74,23 @@ header{
 /*elaboración*/
 .conteiner-elaboracion{
     height: auto;
-    width: 1030px;
-    margin-left: 15%;
     background-color: rgba(212, 166, 105, 0.452);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .elaboracion2{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
     
 .elaboracion-div{
     display: flex;
     flex-direction: row;
     padding: 10px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .fotoe{
@@ -207,11 +209,17 @@ header{
     display: flex;
     justify-content: center;
 }
+
+.card-img-top{
+    width:400px;
+    
+}
 .card{
     text-align: center;
     background-color: rgba(228, 217, 188, 0.274); 
     margin-top: 10px;
     margin-left: 10px;
+    width: 400px;
 
 }
 /*fin prodcutos*/
@@ -298,7 +306,8 @@ header{
     .conteiner-elaboracion{
         height: auto;
         width: auto;
-        margin-left: 10px;
+        display: flex;
+        justify-items: center;
     }
     
     .elaboracion-div{
@@ -328,6 +337,20 @@ header{
     .margin-foto{
         margin-top: 30px;
     }
+
+    .container-productos{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .card-img-top{
+        width: auto;
+    }
+    .card{
+        width: 48%;
+        margin: 0%;
+        }
+
 }
 @media only screen  and (min-width: 769px) and (max-width: 984px)
 {
@@ -355,10 +378,10 @@ header{
         height: auto;
         width: auto;
         margin-left: ;
-      
     }
+    
+    
 }
-
 /*navegador*/
 
 

@@ -1,0 +1,388 @@
+
+/*variantes*/
+
+$colorclaro:  rgba(228, 217, 188, 0.699);
+
+$colorintermedio:  rgba(165, 42, 42, 0.329);
+
+$coloroscuro: rgba(161, 58, 58, 0.603);
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+
+body{
+    background-image: url(Img/fondonude.jpg);
+    background-size: cover;
+}
+
+
+.jumbotron{
+    height: 800px;
+    background-image: url(Img/portada.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.jumbotron h1{
+    font-size: 80px;
+    font-weight: 150;
+    text-align: left;
+    padding-top: 1px;
+    
+}
+
+header{
+    display: flex;
+    background-color: rgba(228, 217, 188, 0.699);
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;  
+}
+
+.container-secciones{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+.logof{
+    height: 90px;
+    width: 90px;
+    top: 200px; 
+    margin-left: 20px; 
+}
+
+
+.section{
+    height: 80px;
+    width: 150px;
+    background-color: $coloroscuro;
+    font-size: 24px;
+    display: inline-block;
+    margin: 10px;
+    transition: all 1.7s;
+    text-align: center; 
+    color: black;
+}
+
+
+.section:hover{
+    height: 100px;
+    width: 170px;
+}
+
+/*fin header*/ 
+
+/*nosotras*/
+.seccion-nosotras{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    background-color: $coloroscuro;
+    padding: 10px;
+    height: 500px;
+}
+.relato{
+    background-color: $colorclaro;
+    margin-right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75%;
+    width: 50%;
+    margin-top: 30px;
+}
+.foto-nosotras{
+    margin-left: 10px;
+    background-image: url(Img/mailen.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 75%;
+    width: 50%;
+    margin-top: 30px;
+    
+}
+
+/* fin nosotras*/
+
+/*inicio prodcutos*/
+.container-productos{
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top{
+    width:400px;
+    
+}
+.card{
+    text-align: center;
+    background-color: rgba(228, 217, 188, 0.274); 
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 400px;
+
+}
+/*fin prodcutos*/
+
+/*elaboración*/
+.conteiner-elaboracion{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.elaboracion2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+.elaboracion-div{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+}
+
+.fotoe{
+    height: 500px;
+    width: 500px;
+}
+
+.textoe{
+    height: 500px;
+    width: 500px;
+    background-color: $coloroscuro;  
+}
+
+.f1{
+    background-image: url(Img/elementos.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.f2{
+    background-image: url(Img/cera.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.f3{
+    background-image: url(Img/frasco.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.descripcion{
+    background-color: $colorclaro;
+    text-align: center;
+    padding: 50px;
+    margin-top: 120px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+/*fin elaboración*/
+
+/*inicio formulario*/
+
+.formulario{
+    display: flex;
+    height: 800;
+    width: 600;
+    background-color: rgba(156, 48, 34, 0.527);
+    justify-content: center;
+    border: solid black 2px;
+}
+
+/*fin formulario*/
+
+/*inicio footer*/
+
+.conteinerpie{
+    display: flex;
+    height: 90px;
+    width: auto;
+    background-color: rgba(228, 217, 188, 0.644);
+    text-align: center;
+    display: block;
+}
+
+.redes{
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    display: inline;
+    padding: 10px;
+}
+
+.logow{
+    color: green;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 500px;
+    left: 1200px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.copy{
+    display: flex;
+    top: 500px;
+    left: 1200px;
+
+}
+
+/*fin footer*/
+
+
+@media only screen and (max-width: 768px)
+{
+
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+    .section{
+    display: flex;
+    height: 50px;
+    width: 55px;
+    font-size: 10px;
+    color: black;
+    margin: 2px;
+    text-align: center;
+    transition: all 1.7s;
+    }  
+
+    .section:hover{
+        height: 55px;
+        width: 65px;
+    }
+
+    .logof{
+        margin: 10px;
+        top: 0px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .container-secctions{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        justify-content: center;
+    }
+
+    .seccion-nosotras{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        
+    }
+
+    .foto-nosotras{
+        height: 50%;
+        width: 95%;
+        margin: auto;
+    }
+    .relato{
+        height: 60%;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;  
+    }
+
+    .relatop{
+        margin: auto;
+    }
+
+    .conteiner-elaboracion{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-items: center;
+    }
+    
+    .elaboracion-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .fotoe{
+        height: 350px;
+        width: 350px;
+    }
+    
+    .textoe{
+        height: 350px;
+        width: 350px;
+    }
+
+    .descripcion{
+        text-align: center;
+        padding: 50px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .margin-foto{
+        margin-top: 30px;
+    }
+
+    .container-productos{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .card-img-top{
+        width: auto;
+    }
+    .card{
+        width: 48%;
+        margin: 0%;
+        }
+
+}
+@media only screen  and (min-width: 769px) and (max-width: 984px)
+{
+    .section{
+    height: 75px;
+    width: 120px;
+    margin: 1px;
+    transition: all 0,2s;
+    font-size: 20px;
+    background-color: rgba(165, 42, 42, 0.479);
+
+    }  
+
+    .section:hover{
+        height: 80px;
+        width: 125px;
+    }
+
+    .logof{
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .conteiner-elaboracion{
+        height: auto;
+        width: auto;
+        
+    }
+    
+    
+}
+

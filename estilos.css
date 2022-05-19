@@ -129,6 +129,7 @@ header {
 
 .card-img-top {
   width: 400px;
+  height: auto;
 }
 
 .card {
